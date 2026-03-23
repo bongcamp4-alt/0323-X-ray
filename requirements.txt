@@ -1,5 +1,5 @@
 streamlit
-tensorflow-cpu>=2.15.0  # 버전 명시! (2.15.0 이상 설치)
-numpy
+tensorflow==2.15.0
+numpy<2.0.0
 opencv-python-headless
 Pillow
