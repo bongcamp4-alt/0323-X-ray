@@ -115,8 +115,10 @@ if uploaded_file is not None and model is not None:
         mime="image/jpeg"
     )
 
-
-with open('xray_app.py', 'w', encoding='utf-8') as f:
-    f.write(app_code)
-print('xray_app.py 저장 완료!')
-print('실행: streamlit run xray_app.py')
+# ... (생략) ...
+    st.download_button(
+        label="💾 분석 결과 이미지 다운로드",
+        data=io.BytesIO(buffer),
+        file_name="gradcam_result.jpg",
+        mime="image/jpeg"
+    )
