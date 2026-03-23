@@ -1,5 +1,5 @@
 streamlit
-tensorflow==2.16.1  # 코랩과 동일한 최신 버전으로 올립니다!
+tensorflow>=2.16.1  # == 대신 >= 기호를 써서 최신 버전을 강제합니다!
 numpy<2.0.0
 opencv-python-headless
 Pillow
