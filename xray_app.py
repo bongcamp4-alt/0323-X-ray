@@ -1,4 +1,3 @@
-app_code = "/content/xray_app.py"
 import streamlit as st
 import tensorflow as tf
 import numpy as np
