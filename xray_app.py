@@ -15,7 +15,7 @@ st.markdown("---")
 @st.cache_resource
 def load_model():
     try:
-        model = tf.keras.models.load_model('pneumonia_model.h5')
+        model = tf.keras.models.load_model('pneumonia_model.keras')
         return model
     except Exception as e:
         st.error(f"모델 로드 실패: {e}\n'pneumonia_model.h5' 파일이 같은 폴더에 있는지 확인해주세요.")
