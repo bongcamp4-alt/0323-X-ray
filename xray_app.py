@@ -120,8 +120,8 @@ if uploaded_file is not None and model is not None:
 
     with col1:
         st.subheader("원본 X-Ray")
-        st.image(img_array, use_container_width=True, cmap='gray')
-
+        st.image(img_array, use_container_width=True)
+        
     with col2:
         st.subheader("Grad-CAM 분석")
         st.image(cv2.cvtColor(overlay, cv2.COLOR_BGR2RGB), use_container_width=True)
